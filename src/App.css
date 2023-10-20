@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bg-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #161624;
+}
+.heading {
+  font-size: 23px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: 900;
+}
+.countries-list-container {
+  padding-left: 0px;
+  border: 1px solid #f8fafc;
+  width: 100%;
+  border-radius: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.list-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #f8fafc;
+  padding: 10px;
+  /* background-color: #f8fafc; */
+}
+.list-heading {
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: 700;
+}
+.visited-button {
+  color: #94a3b8;
+  border: none;
+  background-color: transparent;
+  width: 80px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: 'Roboto';
+  margin-left: 10px;
+  height: 35px;
+  margin-top: 10px;
+}
+.visit-button {
+  background-color: #3b82f6;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ffffff;
+  border: none;
+  width: 80px;
+  font-size: 15px;
+  font-family: 'Roboto';
+  margin-left: 10px;
+  height: 35px;
+  margin-top: 10px;
+}
+.visited-countries-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.visited-list {
+  width: 32%;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.text-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.remove-button {
+  border: 1px solid #f8fafc;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: transparent;
+  margin-left: 5px;
+  height: 50px;
+}
+.image {
+  width: 100%;
+  height: 200px;
+}
+.no-view-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 25px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+  .visited-list {
+    width: 46%;
+  }
+}
